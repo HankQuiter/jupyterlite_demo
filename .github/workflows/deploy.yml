@@ -24,7 +24,7 @@ jobs:
       - name: build ruby kernel
         run: |
           git clone https://github.com/kateinoigakukun/jupyterlite-ruby-kernel.git
-          pip install jupyterlite-ruby-kernel
+          pip install ./jupyterlite-ruby-kernel
       - name: Build the JupyterLite site
         run: |
           cp README.md content
