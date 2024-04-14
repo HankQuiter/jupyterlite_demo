@@ -21,9 +21,9 @@ jobs:
       - name: Install the dependencies
         run: |
           python -m pip install -r requirements.txt
-      - name: build aletheia
-        run: |
-          python -m pip install ./content/aletheia
+          #      - name: build aletheia
+          # run: |
+          # python -m pip install ./content/aletheia
       - name: Build the JupyterLite site
         run: |
           cp README.md content
