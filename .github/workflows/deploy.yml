@@ -21,6 +21,10 @@ jobs:
       - name: Install the dependencies
         run: |
           python -m pip install -r requirements.txt
+      - name: install R kernel
+        run: |
+          git clone https://github.com/r-wasm/jupyterlite-webr-kernel
+          pip install ./jupyterlite-webr-kernel
       - name: Build the JupyterLite site
         run: |
           cp README.md content
